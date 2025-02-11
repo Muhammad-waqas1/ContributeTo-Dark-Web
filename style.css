@@ -1,0 +1,693 @@
+/* General Page Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background-color: black;
+    color: limegreen;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Landing Page */
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border: 2px solid limegreen;
+    box-shadow: 0 0 15px limegreen;
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 22px;
+    text-shadow: 0 0 10px limegreen;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background: black;
+    border: 1px solid limegreen;
+    color: limegreen;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    background: limegreen;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+#error-msg {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    display: none;
+}
+
+
+
+/* home page  */
+
+
+/* Dark Web Dashboard */
+.dashboard {
+    text-align: center;
+    color: limegreen;
+    margin-top: 50px;
+}
+
+.glitch-text {
+    font-size: 16px;
+    color: red;
+    text-shadow: 1px 1px 10px red;
+    animation: glitch 0.8s infinite alternate;
+}
+
+@keyframes glitch {
+    0% { transform: translateX(2px); }
+    100% { transform: translateX(-2px); }
+}
+
+/* Links */
+.links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    color: cyan;
+    background: black;
+    padding: 10px;
+    border: 1px solid cyan;
+    display: block;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background: cyan;
+    color: black;
+    font-weight: bold;
+}
+
+/* Terminal-style box */
+.terminal {
+    background: black;
+    padding: 15px;
+    border: 1px solid limegreen;
+    box-shadow: 0 0 10px limegreen;
+    margin-top: 40px;
+    width: 350px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hacker-msg {
+    color: red;
+    font-weight: bold;
+    text-shadow: 0 0 10px red;
+}
+
+
+
+
+/* market page */
+
+
+
+
+/* Black Market Page */
+.market {
+    text-align: center;
+    color: red;
+    margin-top: 50px;
+}
+
+.warning {
+    color: orange;
+    font-size: 14px;
+    text-shadow: 0 0 10px red;
+}
+
+/* Product Listings */
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.product {
+    background: black;
+    border: 1px solid red;
+    padding: 15px;
+    box-shadow: 0 0 10px red;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.product h2 {
+    color: limegreen;
+    font-size: 18px;
+}
+
+.product p {
+    font-size: 14px;
+    color: cyan;
+}
+
+.buy-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.buy-btn:hover {
+    background: darkred;
+}
+
+/* Scam Message */
+#scam-message {
+    color: yellow;
+    font-size: 14px;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Secret Vendor */
+.hidden-vendor {
+    margin-top: 40px;
+}
+
+.hidden-vendor a {
+    color: cyan;
+    text-decoration: underline;
+}
+
+.hidden-vendor a:hover {
+    color: red;
+}
+
+
+/* Secret Files Page */
+.secret-files {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.warning {
+    color: red;
+    font-size: 14px;
+    text-shadow: 0 0 10px red;
+}
+
+/* Documents */
+.documents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.document {
+    background: black;
+    border: 1px solid cyan;
+    padding: 15px;
+    box-shadow: 0 0 10px cyan;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.document h2 {
+    color: limegreen;
+    font-size: 18px;
+}
+
+.document p {
+    font-size: 14px;
+    color: cyan;
+}
+
+.decrypt-btn {
+    background: cyan;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.decrypt-btn:hover {
+    background: darkcyan;
+}
+
+/* Decryption Message */
+#decryption-message {
+    color: yellow;
+    font-size: 14px;
+    margin-top: 20px;
+    display: none;
+}
+
+
+
+/* Chatroom page  */
+/* Hacker Chatroom */
+
+.chat-container {
+    text-align: center;
+    color: lime;
+    margin-top: 50px;
+}
+
+.chat-warning {
+    color: red;
+    font-size: 14px;
+    text-shadow: 0 0 10px red;
+}
+
+/* Chat Box */
+.chat-box {
+    width: 80%;
+    max-width: 600px;
+    height: 300px;
+    background: black;
+    border: 2px solid lime;
+    overflow-y: scroll;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* Chat Messages */
+.chat-messages p {
+    color: cyan;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-left: 3px solid lime;
+    margin-bottom: 5px;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.chat-input input {
+    width: 300px;
+    padding: 8px;
+    background: black;
+    border: 1px solid lime;
+    color: white;
+    outline: none;
+}
+
+.chat-input button {
+    padding: 8px;
+    background: lime;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background: darkgreen;
+}
+
+
+
+/* hitman page  */
+
+
+/* Hitman Marketplace */
+.hitman-container {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.hitman-warning {
+    color: red;
+    font-size: 14px;
+    text-shadow: 0 0 10px red;
+}
+
+/* Hitman List */
+.hitman-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.hitman {
+    background: black;
+    border: 1px solid red;
+    padding: 15px;
+    box-shadow: 0 0 10px red;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.hitman h2 {
+    color: red;
+    font-size: 18px;
+}
+
+.hitman p {
+    font-size: 14px;
+    color: cyan;
+}
+
+.hire-btn {
+    background: red;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hire-btn:hover {
+    background: darkred;
+}
+
+/* Payment Message */
+#payment-message {
+    color: yellow;
+    font-size: 14px;
+    margin-top: 20px;
+    display: none;
+}
+
+/* RedRoom page  */
+
+/* Red Room Page */
+.redroom-container {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.redroom-warning {
+    color: red;
+    font-size: 14px;
+    text-shadow: 0 0 10px red;
+}
+
+/* Stream Box */
+.stream-box {
+    width: 80%;
+    max-width: 600px;
+    border: 3px solid red;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 0 0 20px red;
+}
+
+#redroom-video {
+    width: 100%;
+    height: auto;
+}
+
+/* Countdown */
+.countdown {
+    color: yellow;
+    font-size: 18px;
+    text-shadow: 0 0 5px yellow;
+}
+
+/* Chat Box */
+.chat-box {
+    background: black;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid red;
+    box-shadow: 0 0 10px red;
+}
+
+.chat-messages {
+    height: 150px;
+    overflow-y: scroll;
+    text-align: left;
+    padding: 5px;
+    color: cyan;
+}
+
+.chat-box input {
+    width: 70%;
+    padding: 5px;
+    background: black;
+    border: 1px solid red;
+    color: white;
+}
+
+.chat-box button {
+    padding: 5px;
+    background: red;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-box button:hover {
+    background: darkred;
+}
+
+/* Final Warning */
+#final-warning {
+    color: red;
+    font-size: 16px;
+    margin-top: 20px;
+    display: none;
+}
+
+
+
+
+/* Finaltest Page  */
+
+/* Final Test Page */
+.finaltest-container {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.finaltest-warning {
+    color: red;
+    font-size: 14px;
+    text-shadow: 0 0 10px red;
+}
+
+/* Scan Box */
+.scan-box {
+    background: black;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid green;
+    box-shadow: 0 0 10px green;
+    color: cyan;
+}
+
+/* Question Section */
+.question-section {
+    margin-top: 30px;
+}
+
+.question-section h2 {
+    color: yellow;
+}
+
+.question-section input {
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+    border: 1px solid yellow;
+    background: black;
+    color: white;
+}
+
+.question-section button {
+    padding: 10px;
+    background: yellow;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.question-section button:hover {
+    background: darkgoldenrod;
+}
+
+/* Result Message */
+#result-message {
+    color: cyan;
+    font-size: 16px;
+    margin-top: 20px;
+    display: none;
+}
+
+
+
+/* secretsociety Page --  */
+
+/* Secret Society Page */
+.secret-container {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.secret-warning {
+    color: red;
+    font-size: 14px;
+    text-shadow: 0 0 10px red;
+}
+
+/* Secret Message */
+.secret-message {
+    background: black;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid cyan;
+    box-shadow: 0 0 10px cyan;
+    font-style: italic;
+}
+
+/* Decrypt Button */
+#decrypt-button {
+    padding: 10px;
+    background: cyan;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#decrypt-button:hover {
+    background: darkcyan;
+}
+
+/* Hidden Text */
+.hidden-text {
+    color: lime;
+    font-size: 18px;
+    margin-top: 20px;
+    display: none;
+}
+
+
+
+/* Email Page  */
+
+
+/* Email Page */
+.email-container {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.email-meta {
+    font-size: 14px;
+    color: gray;
+}
+
+.email-body {
+    background: black;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid cyan;
+    box-shadow: 0 0 10px cyan;
+    font-style: italic;
+}
+
+.encoded-text {
+    font-family: monospace;
+    color: yellow;
+}
+
+#decrypt-input {
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+    border: 1px solid yellow;
+    background: black;
+    color: white;
+}
+
+#decrypt-email {
+    padding: 10px;
+    background: cyan;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#decrypt-email:hover {
+    background: darkcyan;
+}
+
+/* Decryption Result */
+.hidden-text {
+    color: lime;
+    font-size: 18px;
+    margin-top: 20px;
+    display: none;
+}

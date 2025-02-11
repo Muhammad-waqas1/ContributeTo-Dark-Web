@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Email</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="email-container">
+        <h1>📩 Anonymous Email Received</h1>
+        <p class="email-meta">From: UNKNOWN SENDER <noreply@deepweb.org></p>
+        <p class="email-meta">Subject: You Have Been Selected</p>
+
+        <div class="email-body">
+            <p>
+                **Congratulations. You have proven yourself.**  
+                But this is only the beginning.  
+                The real test is yet to come.
+            </p>
+
+            <p>
+                **Decrypt this message:**  
+                <span class="encoded-text">V2hhdCBpcyB0aGUgbGFzdCBrZXk/</span>  
+                (Base64 encoded)
+            </p>
+
+            <input type="text" id="decrypt-input" placeholder="Enter decrypted message...">
+            <button id="decrypt-email">Decrypt</button>
+
+            <p id="decryption-result" class="hidden-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

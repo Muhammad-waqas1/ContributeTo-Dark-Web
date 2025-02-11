@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Red Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="redroom-container">
+        <h1>🔴 LIVE: Red Room Broadcast</h1>
+        <p class="redroom-warning">⚠️ WARNING: This is illegal content.</p>
+
+        <div class="stream-box">
+            <video id="redroom-video" autoplay loop muted>
+                <source src="assets/redroom.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <p class="countdown">Next victim in: <span id="timer">30</span> seconds</p>
+
+        <div class="chat-box">
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be injected here -->
+            </div>
+            <input type="text" id="user-chat" placeholder="Type a message...">
+            <button id="send-chat">Send</button>
+        </div>
+
+        <p id="final-warning"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
